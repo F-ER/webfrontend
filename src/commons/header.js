@@ -8,11 +8,11 @@ class header extends Component {
       <div>
         <header>
           {/* <!-- header-top --> */}
-          <div class="header-top">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="top-menu">
+          <div className="header-top">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="top-menu">
                     <ul>
                       <li>
                         <NavLink to={"service"}> المغاسل </NavLink>
@@ -29,11 +29,11 @@ class header extends Component {
                     </ul>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="header-left">
+                <div className="col-md-6">
+                  <div className="header-left">
                     {/* <!-- header home --> */}
-                    <div class="header-home">
-                      <ul class="data-header-left">
+                    <div className="header-home">
+                      <ul className="data-header-left">
                         <li>
                           <a href="#">
                             <img src="assets/images/icon_phone.svg" /> التطبيق
@@ -51,7 +51,7 @@ class header extends Component {
                     </div>
 
                     {/* <!-- header login --> */}
-                    <div class="header-login">
+                    <div className="header-login">
                       <ul>
                         <li>
                           <img src="assets/images/support.svg" />
@@ -62,14 +62,14 @@ class header extends Component {
                           {/* <a href="./service-en.html"> English</a> */}
                         </li>
                         <li>
-                          <a href="cart.html" class="icon-cart">
+                          <a href="cart.html" className="icon-cart">
                             <img src="assets/images/cart.svg" />
-                            <span class="number-item-cart">99</span>
+                            <span className="number-item-cart">99</span>
                           </a>
                         </li>
-                        <li class="users-header">
+                        <li className="users-header">
                           <img
-                            class="icon-user"
+                            className="icon-user"
                             src="assets/images/icon-user.svg"
                           />
                           <a
@@ -98,27 +98,27 @@ class header extends Component {
           {/* <!-- ِend header-top -->
 
       <!-- header-main --> */}
-          <div class="header-main">
-            <div class="container-fluid">
-              <div class="row row-header-mobile">
-                <div class="col-md-3 logo">
+          <div className="header-main">
+            <div className="container-fluid">
+              <div className="row row-header-mobile">
+                <div className="col-md-3 logo">
                   <a href="/">
                     <img src="assets/images/Logo.svg" />
                   </a>
                 </div>
-                <div class="col-md-9 left-header">
+                <div className="col-md-9 left-header">
                   {/* <!-- main-menu-block --> */}
-                  <div class="main-menu-block mobile-header-nav">
-                    <ul class="main-menu">
+                  <div className="main-menu-block mobile-header-nav">
+                    <ul className="main-menu">
                       <li>
                         <NavLink to={"/"}>الرئيسية</NavLink>
                       </li>
-                      <li class="dropdown">
+                      <li className="dropdown">
                         <a href="#">خدماتنا</a>
-                        <ul class="dropdown-menu">
-                          <li class="dropdown">
+                        <ul className="dropdown-menu">
+                          <li className="dropdown">
                             <NavLink to={"service"}> المغاسل </NavLink>
-                            <ul class="dropdown-menu">
+                            <ul className="dropdown-menu">
                               <li>
                                 <NavLink to={"tools"}> المعدات </NavLink>
                               </li>
@@ -161,10 +161,10 @@ class header extends Component {
                   </div>
 
                   {/* <!-- search block --> */}
-                  <div class="search">
+                  <div className="search">
                     <form>
                       <input
-                        class="search-input"
+                        className="search-input"
                         type="search"
                         placeholder="البحث"
                       />
@@ -172,12 +172,12 @@ class header extends Component {
                   </div>
 
                   <a
-                    class="mobile-menu-toggle js-toggle-menu hamburger-menu"
+                    className="mobile-menu-toggle js-toggle-menu hamburger-menu"
                     href="#"
                   >
-                    <span class="menu-item"></span>
-                    <span class="menu-item"></span>
-                    <span class="menu-item"></span>
+                    <span className="menu-item"></span>
+                    <span className="menu-item"></span>
+                    <span className="menu-item"></span>
                   </a>
                 </div>
               </div>

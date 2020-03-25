@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-
 import { NavLink } from "react-router-dom";
 
-export default class indexEn extends Component {
+export default class confirmFormEn extends Component {
   render() {
     return (
       <div>
@@ -205,280 +204,337 @@ export default class indexEn extends Component {
           {/* <!-- end header-main --> */}
         </header>
         {/* <!-- End Header --> */}
-
         <div className="main-web">
-          {/* <!--  Main web  -->
-        <!-- main slider --> */}
-          <div className="main-slider" dir="ltr">
-            <div>
-              <img src="assets/images/slider.jpg" />
+          {/* <!--  Main web  --> */}
+          <div className="container">
+            <div className="breadcrumb">
+              <a href="#">Store</a>
+              <a href="#">Cart</a>
+              <span>Confirm Order</span>
             </div>
-            <div>
-              <img src="assets/images/slider2.jpg" />
-            </div>
-            <div>
-              <img src="assets/images/slider2.jpg" />
+
+            <div className="row container-confirm-form">
+              <div className="col-md-9 right-details  confirm-right confirm-form">
+                {/* <!-- Prosnal data Block --> */}
+                <div className="block-form">
+                  <h4>Personal Information</h4>
+                  <div className="data-block-form">
+                    <div className="form-row">
+                      <div className="col">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Name"
+                        />
+                      </div>
+                      <div className="col">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Mobile Number"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- Contact  Addess  --> */}
+                <div className="block-form">
+                  <h4>Delivery Address</h4>
+                  <div className="data-block-form">
+                    <div className="form-row">
+                      <div className="col">
+                        <select
+                          className="form-control"
+                          id="exampleFormControlSelect1"
+                        >
+                          <option selected>Region</option>
+                          <option>1 Region</option>
+                          <option>2 Region</option>
+                          <option>3 Region</option>
+                          <option>4 Region</option>
+                          <option>5 Region</option>
+                        </select>
+                      </div>
+                      <div className="col">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="City"
+                        />
+                      </div>
+                    </div>
+                    <div className="form-row">
+                      <div className="col">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Neighborhood"
+                        />
+                      </div>
+                      <div className="col">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Street"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="form-row">
+                      <div className="col">
+                        <textarea
+                          className="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                          placeholder="Additional Information"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* <!-- Payment Method  --> */}
+                <div className="block-form wiht-out-bgheader">
+                  <h4>Payment Method</h4>
+                  <div className="data-block-form">
+                    <div className="form-row">
+                      <div className="col">
+                        <input
+                          type="radio"
+                          id="pamyment1"
+                          name="pamyment"
+                          className="custom-control-input"
+                        />
+                        <label className="custom-control-label" for="pamyment1">
+                          Cash On Delivery
+                        </label>
+                      </div>
+                      <div className="col">
+                        <input
+                          type="radio"
+                          id="pamyment2"
+                          name="pamyment"
+                          className="custom-control-input"
+                        />
+                        <label className="custom-control-label" for="pamyment2">
+                          Online Payment via visa or Mada Card
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* <!-- visa data Block --> */}
+                <div className="block-form">
+                  <h4>Card Details</h4>
+                  <div className="data-block-form">
+                    <div className="form-row">
+                      <div className="col">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Card Holder"
+                        />
+                      </div>
+                      <div className="col">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Card Number"
+                        />
+                      </div>
+                    </div>
+                    <div className="form-row">
+                      <div className="col">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Year"
+                        />
+                      </div>
+                      <div className="col">
+                        <select
+                          className="form-control"
+                          id="exampleFormControlSelect1"
+                        >
+                          <option selected> Month</option>
+                          <option>1 Month</option>
+                          <option>2 Month</option>
+                          <option>3 Month</option>
+                          <option>4 Month</option>
+                          <option>5 Month</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div className="form-row">
+                      <div className="col">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Security Number"
+                        />
+                      </div>
+                      <div className="col"></div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* <!-- details-order-blocks --> */}
+                <div className="details-order-blocks">
+                  <div className="order-blocks">
+                    <h4>Order Details</h4>
+
+                    <div className="item-order-details-block">
+                      {/* <!-- Item --> */}
+                      <div className="item-order-details">
+                        <div className="col-md-2 img-pro-cart">
+                          <img src="assets/images/img-inner-cart.jpg" />
+                        </div>
+
+                        <div className="col-md-6 products-name-data">
+                          <div className="name-product">
+                            {" "}
+                            Alrahden for White Clothes 6 KG
+                          </div>
+                          <div className="desc-details-product">6 kg</div>
+                        </div>
+                        <div className="col-md-2 quantity-numner-details">
+                          <span> 1 </span>
+                        </div>
+                        <div className="col-md-2 price-product-order">
+                          79 SAR
+                        </div>
+                      </div>
+                      {/* <!-- Item --> */}
+                      <div className="item-order-details">
+                        <div className="col-md-2 img-pro-cart">
+                          <img src="assets/images/img-inner-cart.jpg" />
+                        </div>
+
+                        <div className="col-md-6 products-name-data">
+                          <div className="name-product">
+                            {" "}
+                            Alrahden for White Clothes 6 KG
+                          </div>
+                          <div className="desc-details-product">6 kg</div>
+                        </div>
+                        <div className="col-md-2 quantity-numner-details">
+                          <span> 1 </span>
+                        </div>
+                        <div className="col-md-2 price-product-order">
+                          79 SAR
+                        </div>
+                      </div>
+                      {/* <!-- Item --> */}
+                      <div className="item-order-details">
+                        <div className="col-md-2 img-pro-cart">
+                          <img src="assets/images/img-inner-cart.jpg" />
+                        </div>
+
+                        <div className="col-md-6 products-name-data">
+                          <div className="name-product">
+                            {" "}
+                            Alrahden for White Clothes 6 KG
+                          </div>
+                          <div className="desc-details-product">6 kg</div>
+                        </div>
+                        <div className="col-md-2 quantity-numner-details">
+                          <span> 1 </span>
+                        </div>
+                        <div className="col-md-2 price-product-order">
+                          79 SAR
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="totlal-order-bootom">
+                    Total: <span>79 SAR</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* <!-- Left Cart --> */}
+              <div className="col-md-3 left-details cart-left  confirm-left">
+                <div className="details-products-block-left  left-cart-block left-confirm-block  block-coupon">
+                  <h6>Have a Coupon?</h6>
+                  <form>
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Please enter your coupon"
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      className="btn btn-primary btn-link-confirm"
+                    >
+                      Activate Coupon
+                    </button>
+                  </form>
+                </div>
+                <div className="details-products-block-left  left-cart-block left-confirm-block block-total-confirm ">
+                  <div className="total-confirm">
+                    Total: <span className="price-total-confirm">79 SAR</span>
+                  </div>
+                  <p>
+                    by clicking on Confirm Order, I accept that I have read and
+                    understood everything related to terms and conditions.
+                  </p>
+                  <a className="btn-link-confirm" href="./confirm-massage-en">
+                    Confirm Order
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          {/* <!-- End main slider -->
-
-        <!-- service home --> */}
-          <div
-            className="service-home  wow zoomIn animated "
-            data-wow-delay="0.3s"
-          >
-            <div
-              className="items-service wow zoomIn animated "
-              data-wow-delay="0.2s"
-            >
-              <a href="#">
-                <img src="assets/new/imags/carpet_washing.jpg" />
-                <div className="desc-item-service">
-                  <div className="icon-service">
-                    <img src="assets/images/icon-service.svg" />
-                  </div>
-                  <h2>Carpets Service</h2>
-                </div>
-              </a>
-              <div className="overlay"></div>
-              <div className="content">
-                <h2>Carpets Service</h2>
-              </div>
-            </div>
-            <div
-              className="items-service wow zoomIn animated "
-              data-wow-delay="0.4s"
-            >
-              <a href="#">
-                <img src="assets/new/imags/ironing_shirts.jpg" />
-                <div className="desc-item-service">
-                  <div className="icon-service">
-                    <img src="assets/images/service2.svg" />
-                  </div>
-                  <h2>Clothes Service</h2>
-                </div>
-              </a>
-              <div className="overlay"></div>
-              <div className="content">
-                <h2>Clothes Service</h2>
-              </div>
-            </div>
-            <div
-              className="items-service wow zoomIn animated "
-              data-wow-delay="0.6s"
-            >
-              <a href="#">
-                <img src="assets/new/imags/washing_gowns.jpg" />
-                <div className="desc-item-service">
-                  <div className="icon-service">
-                    <img src="assets/images/service3.svg" />
-                  </div>
-                  <h2>Abayas Service</h2>
-                </div>
-              </a>
-              <div className="overlay"></div>
-              <div className="content">
-                <h2>Abayas Service</h2>
-              </div>
-            </div>
-            <div
-              className="items-service wow zoomIn animated "
-              data-wow-delay="0.8s"
-            >
-              <a href="#">
-                <img src="assets/new/imags/washing_towels.jpg" />
-                <div className="desc-item-service">
-                  <div className="icon-service">
-                    <img src="assets/images/shop-icon.svg" />
-                  </div>
-                  <h2>Towels Service</h2>
-                </div>
-              </a>
-              <div className="overlay"></div>
-              <div className="content">
-                <h2>Towels Service</h2>
-              </div>
-            </div>
-          </div>
-          {/* <!-- End service home -->
-
-
-        <!-- Booking a home service --> */}
-          <div className="booking-service">
-            <div
-              className="container wow  fadeInUp animated"
-              data-wow-delay="0.3s"
-            >
-              <h2>Book house Service</h2>
-              <p>
-                Our large fleet equipped with high quality machines and trained
-                crew at the highest levels provides the best levels of quality
-                and service to our customers in their homes to wash all kinds of
-                carpets, rugs, furniture and curtains
-              </p>
-              <form className="form-booking-home">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Name"
-                />
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Mobile Number"
-                />
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Address"
-                />
-                <button type="submit" className="btn btn-primary">
-                  Book now
-                </button>
-              </form>
-            </div>
-          </div>
-          {/* <!-- ِEnd Booking a home service -->
-
-
-        <!-- Alrahden Now --> */}
-          <div className="alrahden-now ">
-            <div className="container">
-              <h2>Alrahden Now</h2>
-              <div className="data-alrahden">
+          {/* <!-- service shop block --> */}
+          <div className="service-shop-block service-footer-shop">
+            <div className="container-fluid">
+              <div className="row">
                 <div
-                  className="item-now wow zoomIn animated "
+                  className="col-md-3 items-service-shop wow zoomIn animated "
                   data-wow-delay="0.2s"
                 >
-                  <img src="./assets/images/user-tie.svg" />
-                  <div className="acount-number-now">1</div>
-                  <div className="title-now"> In Quality</div>
+                  <img src="assets/images/connecting-icon.svg" />
+                  <h3>Recieve from any branch</h3>
+                  <p>Or free delivery on order for more than 200 riyals</p>
                 </div>
 
                 <div
-                  className="item-now wow zoomIn animated "
+                  className="col-md-3 items-service-shop wow zoomIn animated "
                   data-wow-delay="0.4s"
                 >
-                  <img src="./assets/images/emp.svg" />
-                  <div className="acount-number-now">30</div>
-                  <div className="title-now">years of experience</div>
+                  <img src="assets/images/return.svg" />
+                  <h3>Free returns</h3>
+                  <p>Return policy in case that you do not like the product</p>
                 </div>
 
                 <div
-                  className="item-now wow zoomIn animated "
+                  className="col-md-3 items-service-shop wow zoomIn animated "
                   data-wow-delay="0.6s"
                 >
-                  <img src="./assets/images/icon_location.svg" />
-                  <div className="acount-number-now">5</div>
-                  <div className="title-now">Different Regions</div>
+                  <img src="assets/images/security-icon.svg" />
+                  <h3>Secure direct payment</h3>
+                  <p>We accept all credit cards or mada cards</p>
                 </div>
 
                 <div
-                  className="item-now wow zoomIn animated "
+                  className="col-md-3 items-service-shop wow zoomIn animated "
                   data-wow-delay="0.8s"
                 >
-                  <img src="./assets/images/order-icon.svg" />
-                  <div className="acount-number-now">5000</div>
-                  <div className="title-now">Request And More</div>
+                  <img src="assets/images/client-service.svg" />
+                  <h3>Customer Service Center</h3>
+                  <p>Available 24 hours</p>
                 </div>
               </div>
             </div>
           </div>
-          {/* <!-- End Alrahden Now -->
-
-        <!-- Customers Bolck --> */}
-          <div className="customers">
-            <div className="container">
-              <h2>Our Clients</h2>
-              <div
-                className="customers-service wow zoomIn animated "
-                data-wow-delay="0.8s"
-                dir="ltr"
-              >
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom1.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom2.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom3.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom4.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom5.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom6.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom7.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom4.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom2.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom3.png" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* <!-- End Customers Bolck -->
-
-        <!-- Mailing list right --> */}
-          <div className="mailing-list-right  animatable bounceInRight">
-            <div className="btn-colse-mail">X</div>
-            <div className="desc-mail-right">Subcsribe to get our offers</div>
-            <form>
-              <input
-                type="email"
-                className="form-control"
-                placeholder="Email  Or Phone Number"
-              />
-              <button type="submit" className="btn btn-primary">
-                Subcsribe
-              </button>
-            </form>
-          </div>
-          {/* <!-- End Mailing list right -->
-
-
-        <!-- footer --> */}
+          {/* <!-- End service shop block --> */}
         </div>
+        {/* <!-- End  Main web  --> */}
+
         {/* <!-- End  Main web  -->
     <!-- Footer  --> */}
         <footer>
@@ -902,6 +958,18 @@ export default class indexEn extends Component {
             </div>
           </div>
         </div>
+        {/* <!-- End Modal Login  --> */}
+
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/slick/slick.min.js"></script>
+        <script src="assets/datepicker/moment.min.js"></script>
+        <script src="assets/datepicker/daterangepicker.js"></script>
+        {/* <!-- <script src="assets/js/bootstrap-datepicker.min.js"></script> --> */}
+        <script src="assets/js/wow.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <div></div>
       </div>
     );
   }

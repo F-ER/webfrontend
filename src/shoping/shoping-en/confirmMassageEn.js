@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-
 import { NavLink } from "react-router-dom";
-
-export default class indexEn extends Component {
+export default class confirmMassageEn extends Component {
   render() {
     return (
       <div>
@@ -207,280 +205,326 @@ export default class indexEn extends Component {
         {/* <!-- End Header --> */}
 
         <div className="main-web">
-          {/* <!--  Main web  -->
-        <!-- main slider --> */}
-          <div className="main-slider" dir="ltr">
-            <div>
-              <img src="assets/images/slider.jpg" />
+          {/* <!--  Main web  --> */}
+          <div className="container">
+            <div className="breadcrumb">
+              <a href="#">Store</a>
+              <a href="#">Cart</a>
+              <span>Confirm Order</span>
             </div>
-            <div>
-              <img src="assets/images/slider2.jpg" />
-            </div>
-            <div>
-              <img src="assets/images/slider2.jpg" />
+
+            <div className="row">
+              <div className="confirm-massege">
+                <img src="assets/images/icon-ok.svg" />
+                <p>
+                  thanks for shoping with us, your order has been successfully
+                  confirmed
+                </p>
+              </div>
+
+              <div className="other-products">
+                <h4>Also See</h4>
+                <div className="row block-item-product">
+                  {/* <!-- item-other-product --> */}
+                  <div className="col-md-3 item-other-product">
+                    <div className="item-other-product-block">
+                      <div className="img-other">
+                        <img src="assets/images/product1.jpg" />
+                      </div>
+                      <div className="pro-name">
+                        <a href="#">
+                          {" "}
+                          Alrahden for white clothes family size 6kg{" "}
+                        </a>
+                      </div>
+                      <div className="rating">
+                        <input
+                          type="radio"
+                          id="star5"
+                          name="rating"
+                          value="5"
+                        />
+                        <label for="star5"></label>
+                        <input
+                          type="radio"
+                          id="star4"
+                          name="rating"
+                          value="4"
+                        />
+                        <label for="star4"></label>
+                        <input
+                          type="radio"
+                          id="star3"
+                          name="rating"
+                          value="3"
+                        />
+                        <label for="star3"></label>
+                        <input
+                          type="radio"
+                          id="star2"
+                          name="rating"
+                          value="2"
+                        />
+                        <label for="star2"></label>
+                        <input
+                          type="radio"
+                          id="star1"
+                          name="rating"
+                          value="1"
+                        />
+                        <label for="star1"></label>
+                      </div>
+                      <div className="down-block-product">
+                        <div className="price-porducts">
+                          <div className="old-price">105 SAR</div>
+                          <div className="new-price">79 SAR</div>
+                        </div>
+                        <div className="add-shopping-cart">
+                          <a href="#">
+                            <img src="assets/images/add-shopping-cart.svg" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- item-other-product --> */}
+                  <div className="col-md-3 item-other-product">
+                    <div className="item-other-product-block">
+                      <div className="img-other">
+                        <img src="assets/images/product1.jpg" />
+                      </div>
+                      <div className="pro-name">
+                        <a href="#">
+                          {" "}
+                          Alrahden for white clothes family size 6kg{" "}
+                        </a>
+                      </div>
+                      <div className="rating">
+                        <input
+                          type="radio"
+                          id="star5"
+                          name="rating"
+                          value="5"
+                        />
+                        <label for="star5"></label>
+                        <input
+                          type="radio"
+                          id="star4"
+                          name="rating"
+                          value="4"
+                        />
+                        <label for="star4"></label>
+                        <input
+                          type="radio"
+                          id="star3"
+                          name="rating"
+                          value="3"
+                        />
+                        <label for="star3"></label>
+                        <input
+                          type="radio"
+                          id="star2"
+                          name="rating"
+                          value="2"
+                        />
+                        <label for="star2"></label>
+                        <input
+                          type="radio"
+                          id="star1"
+                          name="rating"
+                          value="1"
+                        />
+                        <label for="star1"></label>
+                      </div>
+                      <div className="down-block-product">
+                        <div className="price-porducts">
+                          <div className="old-price">105 SAR</div>
+                          <div className="new-price">79 SAR</div>
+                        </div>
+                        <div className="add-shopping-cart">
+                          <a href="#">
+                            <img src="assets/images/add-shopping-cart.svg" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* <!-- item-other-product --> */}
+                  <div className="col-md-3 item-other-product">
+                    <div className="item-other-product-block">
+                      <div className="img-other">
+                        <img src="assets/images/product1.jpg" />
+                      </div>
+                      <div className="pro-name">
+                        <a href="#">
+                          {" "}
+                          Alrahden for white clothes family size 6kg{" "}
+                        </a>
+                      </div>
+                      <div className="rating">
+                        <input
+                          type="radio"
+                          id="star5"
+                          name="rating"
+                          value="5"
+                        />
+                        <label for="star5"></label>
+                        <input
+                          type="radio"
+                          id="star4"
+                          name="rating"
+                          value="4"
+                        />
+                        <label for="star4"></label>
+                        <input
+                          type="radio"
+                          id="star3"
+                          name="rating"
+                          value="3"
+                        />
+                        <label for="star3"></label>
+                        <input
+                          type="radio"
+                          id="star2"
+                          name="rating"
+                          value="2"
+                        />
+                        <label for="star2"></label>
+                        <input
+                          type="radio"
+                          id="star1"
+                          name="rating"
+                          value="1"
+                        />
+                        <label for="star1"></label>
+                      </div>
+                      <div className="down-block-product">
+                        <div className="price-porducts">
+                          <div className="old-price">105 SAR</div>
+                          <div className="new-price">79 SAR</div>
+                        </div>
+                        <div className="add-shopping-cart">
+                          <a href="#">
+                            <img src="assets/images/add-shopping-cart.svg" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* <!-- item-other-product --> */}
+                  <div className="col-md-3 item-other-product">
+                    <div className="item-other-product-block">
+                      <div className="img-other">
+                        <img src="assets/images/product1.jpg" />
+                      </div>
+                      <div className="pro-name">
+                        <a href="#">
+                          {" "}
+                          Alrahden for white clothes family size 6 kg{" "}
+                        </a>
+                      </div>
+                      <div className="rating">
+                        <input
+                          type="radio"
+                          id="star5"
+                          name="rating"
+                          value="5"
+                        />
+                        <label for="star5"></label>
+                        <input
+                          type="radio"
+                          id="star4"
+                          name="rating"
+                          value="4"
+                        />
+                        <label for="star4"></label>
+                        <input
+                          type="radio"
+                          id="star3"
+                          name="rating"
+                          value="3"
+                        />
+                        <label for="star3"></label>
+                        <input
+                          type="radio"
+                          id="star2"
+                          name="rating"
+                          value="2"
+                        />
+                        <label for="star2"></label>
+                        <input
+                          type="radio"
+                          id="star1"
+                          name="rating"
+                          value="1"
+                        />
+                        <label for="star1"></label>
+                      </div>
+                      <div className="down-block-product">
+                        <div className="price-porducts">
+                          <div className="old-price">105 SAR</div>
+                          <div className="new-price">79 SAR</div>
+                        </div>
+                        <div className="add-shopping-cart">
+                          <a href="#">
+                            <img src="assets/images/add-shopping-cart.svg" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          {/* <!-- End main slider -->
-
-        <!-- service home --> */}
-          <div
-            className="service-home  wow zoomIn animated "
-            data-wow-delay="0.3s"
-          >
-            <div
-              className="items-service wow zoomIn animated "
-              data-wow-delay="0.2s"
-            >
-              <a href="#">
-                <img src="assets/new/imags/carpet_washing.jpg" />
-                <div className="desc-item-service">
-                  <div className="icon-service">
-                    <img src="assets/images/icon-service.svg" />
-                  </div>
-                  <h2>Carpets Service</h2>
-                </div>
-              </a>
-              <div className="overlay"></div>
-              <div className="content">
-                <h2>Carpets Service</h2>
-              </div>
-            </div>
-            <div
-              className="items-service wow zoomIn animated "
-              data-wow-delay="0.4s"
-            >
-              <a href="#">
-                <img src="assets/new/imags/ironing_shirts.jpg" />
-                <div className="desc-item-service">
-                  <div className="icon-service">
-                    <img src="assets/images/service2.svg" />
-                  </div>
-                  <h2>Clothes Service</h2>
-                </div>
-              </a>
-              <div className="overlay"></div>
-              <div className="content">
-                <h2>Clothes Service</h2>
-              </div>
-            </div>
-            <div
-              className="items-service wow zoomIn animated "
-              data-wow-delay="0.6s"
-            >
-              <a href="#">
-                <img src="assets/new/imags/washing_gowns.jpg" />
-                <div className="desc-item-service">
-                  <div className="icon-service">
-                    <img src="assets/images/service3.svg" />
-                  </div>
-                  <h2>Abayas Service</h2>
-                </div>
-              </a>
-              <div className="overlay"></div>
-              <div className="content">
-                <h2>Abayas Service</h2>
-              </div>
-            </div>
-            <div
-              className="items-service wow zoomIn animated "
-              data-wow-delay="0.8s"
-            >
-              <a href="#">
-                <img src="assets/new/imags/washing_towels.jpg" />
-                <div className="desc-item-service">
-                  <div className="icon-service">
-                    <img src="assets/images/shop-icon.svg" />
-                  </div>
-                  <h2>Towels Service</h2>
-                </div>
-              </a>
-              <div className="overlay"></div>
-              <div className="content">
-                <h2>Towels Service</h2>
-              </div>
-            </div>
-          </div>
-          {/* <!-- End service home -->
-
-
-        <!-- Booking a home service --> */}
-          <div className="booking-service">
-            <div
-              className="container wow  fadeInUp animated"
-              data-wow-delay="0.3s"
-            >
-              <h2>Book house Service</h2>
-              <p>
-                Our large fleet equipped with high quality machines and trained
-                crew at the highest levels provides the best levels of quality
-                and service to our customers in their homes to wash all kinds of
-                carpets, rugs, furniture and curtains
-              </p>
-              <form className="form-booking-home">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Name"
-                />
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Mobile Number"
-                />
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Address"
-                />
-                <button type="submit" className="btn btn-primary">
-                  Book now
-                </button>
-              </form>
-            </div>
-          </div>
-          {/* <!-- ِEnd Booking a home service -->
-
-
-        <!-- Alrahden Now --> */}
-          <div className="alrahden-now ">
-            <div className="container">
-              <h2>Alrahden Now</h2>
-              <div className="data-alrahden">
+          {/* <!-- service shop block --> */}
+          <div className="service-shop-block service-footer-shop">
+            <div className="container-fluid">
+              <div className="row">
                 <div
-                  className="item-now wow zoomIn animated "
+                  className="col-md-3 items-service-shop wow zoomIn animated "
                   data-wow-delay="0.2s"
                 >
-                  <img src="./assets/images/user-tie.svg" />
-                  <div className="acount-number-now">1</div>
-                  <div className="title-now"> In Quality</div>
+                  <img src="assets/images/connecting-icon.svg" />
+                  <h3>Recieve from any branch</h3>
+                  <p>Or free delivery on order for more than 200 riyals</p>
                 </div>
 
                 <div
-                  className="item-now wow zoomIn animated "
+                  className="col-md-3 items-service-shop wow zoomIn animated "
                   data-wow-delay="0.4s"
                 >
-                  <img src="./assets/images/emp.svg" />
-                  <div className="acount-number-now">30</div>
-                  <div className="title-now">years of experience</div>
+                  <img src="assets/images/return.svg" />
+                  <h3>Free returns</h3>
+                  <p>Return policy in case that you do not like the product</p>
                 </div>
 
                 <div
-                  className="item-now wow zoomIn animated "
+                  className="col-md-3 items-service-shop wow zoomIn animated "
                   data-wow-delay="0.6s"
                 >
-                  <img src="./assets/images/icon_location.svg" />
-                  <div className="acount-number-now">5</div>
-                  <div className="title-now">Different Regions</div>
+                  <img src="assets/images/security-icon.svg" />
+                  <h3>Secure direct payment</h3>
+                  <p>We accept all credit cards or mada cards</p>
                 </div>
 
                 <div
-                  className="item-now wow zoomIn animated "
+                  className="col-md-3 items-service-shop wow zoomIn animated "
                   data-wow-delay="0.8s"
                 >
-                  <img src="./assets/images/order-icon.svg" />
-                  <div className="acount-number-now">5000</div>
-                  <div className="title-now">Request And More</div>
+                  <img src="assets/images/client-service.svg" />
+                  <h3>Customer Service Center</h3>
+                  <p>Available 24 hours</p>
                 </div>
               </div>
             </div>
           </div>
-          {/* <!-- End Alrahden Now -->
-
-        <!-- Customers Bolck --> */}
-          <div className="customers">
-            <div className="container">
-              <h2>Our Clients</h2>
-              <div
-                className="customers-service wow zoomIn animated "
-                data-wow-delay="0.8s"
-                dir="ltr"
-              >
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom1.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom2.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom3.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom4.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom5.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom6.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom7.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom4.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom2.png" />
-                  </a>
-                </div>
-
-                <div className="item-custom">
-                  <a href="#" target="_blank">
-                    <img src="./assets/images/coustom3.png" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* <!-- End Customers Bolck -->
-
-        <!-- Mailing list right --> */}
-          <div className="mailing-list-right  animatable bounceInRight">
-            <div className="btn-colse-mail">X</div>
-            <div className="desc-mail-right">Subcsribe to get our offers</div>
-            <form>
-              <input
-                type="email"
-                className="form-control"
-                placeholder="Email  Or Phone Number"
-              />
-              <button type="submit" className="btn btn-primary">
-                Subcsribe
-              </button>
-            </form>
-          </div>
-          {/* <!-- End Mailing list right -->
-
-
-        <!-- footer --> */}
+          {/* <!-- End service shop block --> */}
         </div>
-        {/* <!-- End  Main web  -->
-    <!-- Footer  --> */}
+        {/* <!-- End  Main web  --> */}
+        {/* footer */}
         <footer>
           <div className="footer-top">
             <div className="container">
@@ -592,8 +636,7 @@ export default class indexEn extends Component {
           </div>
         </footer>
 
-        {/* 
-    <!-- Modal  Shear--> */}
+        {/* <!-- Modal  Shear--> */}
         <div
           className="modal fade"
           id="shearModal"
@@ -649,11 +692,9 @@ export default class indexEn extends Component {
             </div>
           </div>
         </div>
-        {/* <!-- ِEnd Modal Shear -->
+        {/* <!-- ِEnd Modal Shear --> */}
 
-
-
-    <!-- Contact Us Modal --> */}
+        {/* <!-- Contact Us Modal --> */}
         <div
           className="modal fade "
           id="contactUsModal"
@@ -764,10 +805,9 @@ export default class indexEn extends Component {
             </div>
           </div>
         </div>
-        {/* <!-- End Contact Us Modal -->
+        {/* <!-- End Contact Us Modal --> */}
 
-
-    <!-- Modal Login  --> */}
+        {/* <!-- Modal Login  --> */}
         <div
           className="modal fade login-modal"
           id="loginModal"
@@ -902,6 +942,17 @@ export default class indexEn extends Component {
             </div>
           </div>
         </div>
+        {/* <!-- End Modal Login  --> */}
+
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/slick/slick.min.js"></script>
+        <script src="assets/datepicker/moment.min.js"></script>
+        <script src="assets/datepicker/daterangepicker.js"></script>
+        {/* <!-- <script src="assets/js/bootstrap-datepicker.min.js"></script> --> */}
+        <script src="assets/js/wow.js"></script>
+        <script src="assets/js/custom.js"></script>
       </div>
     );
   }

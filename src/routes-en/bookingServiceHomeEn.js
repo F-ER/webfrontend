@@ -5,17 +5,38 @@ export default class bookingServiceHomeEn extends Component {
   render() {
     return (
       <div>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+        <title>Alrahden Laundry | Alrahden</title>
+        <meta name="description" content="Alrahden Laundry | Alrahden " />
+        <meta property="og:title" content="Alrahden Laundry | Alrahden" />
+        <meta property="og:description" content="Alrahden Laundry | Alrahden" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+        />
+        <link rel="stylesheet" href="assets/fonts/font/stylesheet-font.css" />
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css" />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/hover-min.css" />
+        <link rel="stylesheet" href="assets/css/animate.css" />
+        <link rel="stylesheet" href="assets/slick/slick.css" />
+        <link rel="stylesheet" href="assets/slick/slick-theme.css" />
+        <link rel="stylesheet" href="assets/datepicker/daterangepicker.css" />
+        {/* <!-- <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css"> --> */}
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/en.css" />
+        <link rel="stylesheet" href="assets/css/responsive.css"></link>
         <header>
           {/* <!-- header-top --> */}
-          <div class="header-top">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="top-menu">
+          <div className="header-top">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="top-menu">
                     <ul>
                       <li>
                         <NavLink to={"service-en"}> Laundry </NavLink>
-                        {/* <a href="service-en.html">Laundry</a> */}
                       </li>
                       <li>
                         <NavLink to={"tools-en"}> Tools </NavLink>
@@ -27,16 +48,17 @@ export default class bookingServiceHomeEn extends Component {
                         {/* <a href="catalog-en.html">Hotel Services</a> */}
                       </li>
                       <li>
-                        <a href="https://alrahden-store.com/">Store</a>
+                        <NavLink to={"shop-en"}> Store </NavLink>
+                        {/* <a href="https://alrahden-store.com/">Store</a> */}
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="header-left">
+                <div className="col-md-6">
+                  <div className="header-left">
                     {/* <!-- header home --> */}
-                    <div class="header-home">
-                      <ul class="data-header-left">
+                    <div className="header-home">
+                      <ul className="data-header-left">
                         <li>
                           <a href="#">
                             <img src="assets/images/icon_phone.svg" /> App{" "}
@@ -46,27 +68,32 @@ export default class bookingServiceHomeEn extends Component {
                           <img src="assets/images/support.svg" />
                           920006848
                         </li>
-                        <NavLink to={"/"}> Arabic</NavLink>
+                        <li>
+                          <NavLink to={"/"}> عربي</NavLink>
+                          {/* <a href="./confirm-form.html"> عربي</a> */}
+                        </li>
                       </ul>
                     </div>
 
                     {/* <!-- header login --> */}
-                    <div class="header-login">
+                    <div className="header-login">
                       <ul>
                         <li>
                           <img src="assets/images/support.svg" />
                           920006848
                         </li>
-                        <NavLink to={"/"}> Arabic</NavLink>
                         <li>
-                          <a href="cart-en" class="icon-cart">
+                          <NavLink to={"/"}> عربي</NavLink>
+                        </li>
+                        <li>
+                          <a href="cart-en" className="icon-cart">
                             <img src="assets/images/cart.svg" />
-                            <span class="number-item-cart">99</span>
+                            <span className="number-item-cart">99</span>
                           </a>
                         </li>
-                        <li class="users-header">
+                        <li className="users-header">
                           <img
-                            class="icon-user"
+                            className="icon-user"
                             src="assets/images/icon-user.svg"
                           />
                           <a
@@ -92,34 +119,33 @@ export default class bookingServiceHomeEn extends Component {
               </div>
             </div>
           </div>
+          {/* <!-- ِend header-top -->
 
-          {/* <!-- header-main --> */}
-
-          <div class="header-main">
-            <div class="container-fluid">
-              <div class="row row-header-mobile">
-                <div class="col-md-3 logo">
+        // <!-- header-main --> */}
+          <div className="header-main">
+            <div className="container-fluid">
+              <div className="row row-header-mobile">
+                <div className="col-md-3 logo">
                   <a href="indexEn">
                     <img src="assets/images/Logo.svg" />
                   </a>
                 </div>
-                <div class="col-md-9 left-header">
+                <div className="col-md-9 left-header">
                   {/* <!-- main-menu-block --> */}
-                  <div class="main-menu-block mobile-header-nav">
-                    <ul class="main-menu">
+                  <div className="main-menu-block mobile-header-nav">
+                    <ul className="main-menu">
                       <li>
                         <a href="indexEn">Home</a>
                       </li>
-                      <li class="dropdown">
+                      <li className="dropdown">
                         <a href="#">Our Services</a>
-                        <ul class="dropdown-menu">
-                          <li class="dropdown">
-                            <NavLink to={"service-en"}> Laundry </NavLink>
-                            {/* <a href="#">Laundry</a> */}
-                            <ul class="dropdown-menu">
+                        <ul className="dropdown-menu">
+                          <li className="dropdown">
+                            <a href="service-en">Laundries</a>
+                            <ul className="dropdown-menu">
                               <li>
                                 <NavLink to={"tools-en"}> Tools </NavLink>
-                                {/* <a href="#">Tools</a> */}
+                                {/* <a href="./tools-en">Tools</a> */}
                               </li>
                               <li>
                                 <NavLink to={"catalog-en"}>
@@ -132,14 +158,14 @@ export default class bookingServiceHomeEn extends Component {
                           </li>
                           <li>
                             <NavLink to={"tools-en"}> Tools </NavLink>
-                            {/* <a href="#">Tools</a> */}
+                            {/* <a href="./tools-en.html">Tools</a> */}
                           </li>
                           <li>
                             <NavLink to={"catalog-en"}>
                               {" "}
                               Hotel Services{" "}
                             </NavLink>
-                            {/* <a href="#">Hotel Services</a> */}
+                            {/* <a href="#">Hotel services</a> */}
                           </li>
                         </ul>
                       </li>
@@ -147,34 +173,16 @@ export default class bookingServiceHomeEn extends Component {
                         <a href="#">Offers</a>
                       </li>
                       <li>
-                        <NavLink to={"booking-Service-Home-en"}>
-                          {" "}
-                          Book Home Pick-Up{" "}
-                        </NavLink>
-                        {/* <a href="booking-service-home-en.html">
-                            Book Home Pick-Up
-                          </a> */}
-                      </li>
-                      <li>
                         <a href="#">Branches</a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          data-toggle="modal"
-                          data-target="#contactUsModal"
-                        >
-                          Contact Us
-                        </a>
                       </li>
                     </ul>
                   </div>
-
-                  {/* <!-- search block --> */}
-                  <div class="search">
+                  {/* 
+                        <!-- search block --> */}
+                  <div className="search">
                     <form>
                       <input
-                        class="search-input"
+                        className="search-input"
                         type="search"
                         placeholder="Search"
                       />
@@ -182,12 +190,12 @@ export default class bookingServiceHomeEn extends Component {
                   </div>
 
                   <a
-                    class="mobile-menu-toggle js-toggle-menu hamburger-menu"
+                    className="mobile-menu-toggle js-toggle-menu hamburger-menu"
                     href="#"
                   >
-                    <span class="menu-item"></span>
-                    <span class="menu-item"></span>
-                    <span class="menu-item"></span>
+                    <span className="menu-item"></span>
+                    <span className="menu-item"></span>
+                    <span className="menu-item"></span>
                   </a>
                 </div>
               </div>
@@ -197,19 +205,19 @@ export default class bookingServiceHomeEn extends Component {
         </header>
         {/* <!-- End Header --> */}
 
-        <div class="main-web">
+        <div className="main-web">
           {/* <!--  Main web  --> */}
-          <div class="bg-img-inner">
-            <div class="container block-data-top-header">
-              <div class="data-top-header">
-                <div class="breadcrumb">
+          <div className="bg-img-inner">
+            <div className="container block-data-top-header">
+              <div className="data-top-header">
+                <div className="breadcrumb">
                   <a href="#">Store</a>
                   <a href="#">Cart</a>
                   <span>User Information</span>
                 </div>
-                <div class="shear-btn">
+                <div className="shear-btn">
                   <a href="#" data-toggle="modal" data-target="#shearModal">
-                    <i class="fas fa-share-alt"></i>
+                    <i className="fas fa-share-alt"></i>
                   </a>
                 </div>
               </div>
@@ -218,41 +226,41 @@ export default class bookingServiceHomeEn extends Component {
             </div>
           </div>
 
-          <div class="data-page">
-            <div class="container">
-              <div class="bg-inner-page booking-service-home">
-                <div class="data-page with-img">
-                  <div class="right-page right-page-img"> </div>
-                  <div class="left-page">
-                    <div class="form-booking">
+          <div className="data-page">
+            <div className="container">
+              <div className="bg-inner-page booking-service-home">
+                <div className="data-page with-img">
+                  <div className="right-page right-page-img"> </div>
+                  <div className="left-page">
+                    <div className="form-booking">
                       <form>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label>Name</label>
                           <input
                             type="text"
-                            class="form-control"
+                            className="form-control"
                             placeholder="Name"
                           />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label>Mobile Number</label>
                           <input
                             type="number"
-                            class="form-control"
+                            className="form-control"
                             placeholder="Mobile Number"
                           />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label>Address</label>
                           <input
                             type="text"
-                            class="form-control"
+                            className="form-control"
                             placeholder="Address"
                           />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="inputState">Laundry Type</label>
-                          <select class="custom-select form-control">
+                          <select className="custom-select form-control">
                             <option selected="">Laundry Type</option>
                             <option>Laundry Type 1</option>
                             <option>Laundry Type 2</option>
@@ -261,7 +269,7 @@ export default class bookingServiceHomeEn extends Component {
                         </div>
                         <button
                           type="submit"
-                          class="btn btn-primary btn-booking"
+                          className="btn btn-primary btn-booking"
                         >
                           Send
                         </button>
@@ -276,61 +284,61 @@ export default class bookingServiceHomeEn extends Component {
         {/* <!-- End  Main web  --> */}
 
         <footer>
-          <div class="footer-top">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4 footer-block">
+          <div className="footer-top">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-4 footer-block">
                   <h2>Contact Us</h2>
-                  <div class="data-contact">
-                    <div class="address">
+                  <div className="data-contact">
+                    <div className="address">
                       <img src="assets/images/address.svg" />
                       Riyadh - Kingdom Of Saudi Arabia
                     </div>
-                    <div class="phone">
+                    <div className="phone">
                       <img src="assets/images/support-footer.svg" /> 920006848
                     </div>
-                    <div class="download-no">
+                    <div className="download-no">
                       <img src="assets/images/download-icon.svg" /> 12345
                     </div>
-                    <div class="email">
+                    <div className="email">
                       <img src="assets/images/icon-mail.svg" />{" "}
                       info@alrahden.com
                     </div>
                   </div>
 
-                  <div class="social-media">
+                  <div className="social-media">
                     <ul>
                       <li>
                         <a href="#" target="_blank">
-                          <i class="fab fa-facebook-f"></i>
+                          <i className="fab fa-facebook-f"></i>
                         </a>
                       </li>
                       <li>
                         <a href="#" target="_blank">
-                          <i class="fab fa-twitter"></i>
+                          <i className="fab fa-twitter"></i>
                         </a>
                       </li>
                       <li>
                         <a href="#" target="_blank">
-                          <i class="fab fa-instagram"></i>
+                          <i className="fab fa-instagram"></i>
                         </a>
                       </li>
                       <li>
                         <a href="#" target="_blank">
-                          <i class="fab fa-youtube"></i>
+                          <i className="fab fa-youtube"></i>
                         </a>
                       </li>
                       <li>
                         <a href="#" target="_blank">
-                          <i class="fab fa-snapchat-ghost"></i>
+                          <i className="fab fa-snapchat-ghost"></i>
                         </a>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div class="col-md-4 footer-block">
+                <div className="col-md-4 footer-block">
                   <h2>Related Links</h2>
-                  <ul class="footer-menu">
+                  <ul className="footer-menu">
                     <li>
                       <a href="#">Laundry Services</a>
                     </li>
@@ -348,20 +356,20 @@ export default class bookingServiceHomeEn extends Component {
                     </li>
                   </ul>
                 </div>
-                <div class="col-md-4 footer-block">
+                <div className="col-md-4 footer-block">
                   <h2>Get Our Offers</h2>
-                  <div class="maill-list">
-                    <div class="note-mail">
+                  <div className="maill-list">
+                    <div className="note-mail">
                       be informed of our new offers, register now to receive all
                       updates
                     </div>
                     <form>
                       <input
                         type="email"
-                        class="form-control"
+                        className="form-control"
                         placeholder="Email  Or Phone Number"
                       />
-                      <button type="submit" class="btn btn-primary">
+                      <button type="submit" className="btn btn-primary">
                         Subcsribe
                       </button>
                     </form>
@@ -371,7 +379,7 @@ export default class bookingServiceHomeEn extends Component {
             </div>
           </div>
 
-          <div class="footer-bottom">
+          <div className="footer-bottom">
             <ul>
               <li>
                 <a href="#">Privacy Policy</a>
@@ -380,25 +388,27 @@ export default class bookingServiceHomeEn extends Component {
                 <a href="#">Email</a>
               </li>
             </ul>
-            <div class="copy-right">All rights reserved by Alrahden © 2020</div>
+            <div className="copy-right">
+              All rights reserved by Alrahden © 2020
+            </div>
           </div>
         </footer>
 
         {/* <!-- Modal  Shear--> */}
         <div
-          class="modal fade"
+          className="modal fade"
           id="shearModal"
           tabindex="-1"
           role="dialog"
           aria-hidden="true"
         >
-          <div class="modal-dialog shear-modal" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <div class="top-header-modal">
+          <div className="modal-dialog shear-modal" role="document">
+            <div className="modal-content">
+              <div className="modal-body">
+                <div className="top-header-modal">
                   <button
                     type="button"
-                    class="close"
+                    className="close"
                     data-dismiss="modal"
                     aria-label="Close"
                   >
@@ -407,31 +417,31 @@ export default class bookingServiceHomeEn extends Component {
                   <h3>Share this content Via:</h3>
                 </div>
 
-                <div class="data-shear">
+                <div className="data-shear">
                   <ul>
                     <li>
                       <a href="#" target="_blank">
-                        <i class="fas fa-print"></i> Print The Page
+                        <i className="fas fa-print"></i> Print The Page
                       </a>
                     </li>
                     <li>
                       <a href="#" target="_blank">
-                        <i class="far fa-envelope"></i> Send Via Email
+                        <i className="far fa-envelope"></i> Send Via Email
                       </a>
                     </li>
                     <li>
                       <a href="#" target="_blank">
-                        <i class="fab fa-facebook-f"></i> Facebook
+                        <i className="fab fa-facebook-f"></i> Facebook
                       </a>
                     </li>
                     <li>
                       <a href="#" target="_blank">
-                        <i class="fab fa-twitter"></i> Twitter
+                        <i className="fab fa-twitter"></i> Twitter
                       </a>
                     </li>
                     <li>
                       <a href="#" target="_blank">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
+                        <i className="fab fa-whatsapp"></i> WhatsApp
                       </a>
                     </li>
                   </ul>
@@ -446,102 +456,102 @@ export default class bookingServiceHomeEn extends Component {
 
     <!-- Contact Us Modal --> */}
         <div
-          class="modal fade "
+          className="modal fade "
           id="contactUsModal"
           tabindex="-1"
           role="dialog"
           aria-hidden="true"
         >
-          <div class="container">
-            <div class="modal-dialog  contactUsModal" role="document">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <div class="bg-inner-page">
-                    <div class="data-page with-img">
+          <div className="container">
+            <div className="modal-dialog  contactUsModal" role="document">
+              <div className="modal-content">
+                <div className="modal-body">
+                  <div className="bg-inner-page">
+                    <div className="data-page with-img">
                       <button
                         type="button"
-                        class="close"
+                        className="close"
                         data-dismiss="modal"
                         aria-label="Close"
                       >
                         <span aria-hidden="true">&times;</span>
                       </button>
-                      <div class="right-page right-page-img">
-                        <div class="data-contactus">
+                      <div className="right-page right-page-img">
+                        <div className="data-contactus">
                           <p>
                             You can contact us during official working hours
                             from 8-12 am and from 4-8 pm{" "}
                           </p>
-                          <div class="contactus-data">
-                            <span class="phone">
+                          <div className="contactus-data">
+                            <span className="phone">
                               <img src="assets/images/support.svg" />
                               920006848
                             </span>
 
-                            <span class="email-w">
+                            <span className="email-w">
                               <img src="assets/images/email-w.svg" />
                               info@alrahden.com
                             </span>
 
-                            <span class="download-w">
+                            <span className="download-w">
                               <img src="assets/images/download-w.svg" />
                               12345
                             </span>
                           </div>
                         </div>
                       </div>
-                      <div class="left-page">
-                        <div class="form-booking form-contactUs">
+                      <div className="left-page">
+                        <div className="form-booking form-contactUs">
                           <form>
-                            <div class="row">
-                              <div class="col form-group">
+                            <div className="row">
+                              <div className="col form-group">
                                 <label>Name</label>
                                 <input
                                   type="text"
-                                  class="form-control"
+                                  className="form-control"
                                   placeholder="Name"
                                 />
                               </div>
-                              <div class="col form-group">
+                              <div className="col form-group">
                                 <label>Mobile Number</label>
                                 <input
                                   type="text"
-                                  class="form-control"
+                                  className="form-control"
                                   placeholder="Mobile Number"
                                 />
                               </div>
                             </div>
 
-                            <div class="row">
-                              <div class="col form-group">
+                            <div className="row">
+                              <div className="col form-group">
                                 <label>Email</label>
                                 <input
                                   type="email"
-                                  class="form-control"
+                                  className="form-control"
                                   placeholder="Email"
                                 />
                               </div>
-                              <div class="col form-group">
+                              <div className="col form-group">
                                 <label>Title</label>
                                 <input
                                   type="text"
-                                  class="form-control"
+                                  className="form-control"
                                   placeholder="Title"
                                 />
                               </div>
                             </div>
 
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="inputState">Message</label>
                               <textarea
-                                class="form-control"
+                                className="form-control"
                                 rows="3"
                                 placeholder="Your Message"
                               ></textarea>
                             </div>
                             <button
                               type="submit"
-                              class="btn btn-primary btn-booking"
+                              className="btn btn-primary btn-booking"
                             >
                               Send
                             </button>
@@ -560,33 +570,33 @@ export default class bookingServiceHomeEn extends Component {
 
     <!-- Modal Login  --> */}
         <div
-          class="modal fade login-modal"
+          className="modal fade login-modal"
           id="loginModal"
           tabindex="-1"
           role="dialog"
           aria-hidden="true"
         >
-          <div class="block-login-modal">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-body">
+          <div className="block-login-modal">
+            <div className="modal-dialog" role="document">
+              <div className="modal-content">
+                <div className="modal-body">
                   <button
                     type="button"
-                    class="close"
+                    className="close"
                     data-dismiss="modal"
                     aria-label="Close"
                   >
                     <span aria-hidden="true">&times;</span>
                   </button>
 
-                  <div class="logo-login">
+                  <div className="logo-login">
                     <img src="assets/images/logo-v2.svg" />
                   </div>
 
-                  <div class="data-login-block">
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <div className="data-login-block">
+                    <div className="nav nav-tabs" id="nav-tab" role="tablist">
                       <a
-                        class="nav-item nav-link active"
+                        className="nav-item nav-link active"
                         data-toggle="tab"
                         href="#login-tab"
                         role="tab"
@@ -597,7 +607,7 @@ export default class bookingServiceHomeEn extends Component {
                       </a>
 
                       <a
-                        class="nav-item nav-link"
+                        className="nav-item nav-link"
                         data-toggle="tab"
                         href="#register-tab"
                         role="tab"
@@ -607,40 +617,43 @@ export default class bookingServiceHomeEn extends Component {
                         Sign up
                       </a>
                     </div>
-                    <div class="tab-content content-login" id="nav-tabContent">
+                    <div
+                      className="tab-content content-login"
+                      id="nav-tabContent"
+                    >
                       <div
-                        class="tab-pane fade show active"
+                        className="tab-pane fade show active"
                         id="login-tab"
                         role="tabpanel"
                         aria-labelledby="nav-home-tab"
                       >
                         <form>
-                          <div class="form-group">
+                          <div className="form-group">
                             <input
                               type="email"
-                              class="form-control"
+                              className="form-control"
                               placeholder="Email"
                             />
                           </div>
-                          <div class="form-group">
+                          <div className="form-group">
                             <input
                               type="password"
-                              class="form-control"
+                              className="form-control"
                               placeholder="Password"
                             />
                           </div>
                           <button
                             type="submit"
-                            class="btn btn-primary btn-login"
+                            className="btn btn-primary btn-login"
                           >
                             Log in
                           </button>
                         </form>
-                        <div class="info-login">
-                          <div class="forget-password">
+                        <div className="info-login">
+                          <div className="forget-password">
                             <a href="#"> Forgot Password؟</a>
                           </div>
-                          <div class="no-register">
+                          <div className="no-register">
                             or you can continue without Registration،{" "}
                             <a href="#">as a Guest.</a>
                           </div>
@@ -648,36 +661,36 @@ export default class bookingServiceHomeEn extends Component {
                       </div>
 
                       <div
-                        class="tab-pane fade"
+                        className="tab-pane fade"
                         id="register-tab"
                         role="tabpanel"
                         aria-labelledby="register-tab"
                       >
                         <form>
-                          <div class="form-group">
+                          <div className="form-group">
                             <input
                               type="email"
-                              class="form-control"
+                              className="form-control"
                               placeholder="Email"
                             />
                           </div>
-                          <div class="form-group">
+                          <div className="form-group">
                             <input
                               type="password"
-                              class="form-control"
+                              className="form-control"
                               placeholder="Password"
                             />
                           </div>
-                          <div class="form-group">
+                          <div className="form-group">
                             <input
                               type="password"
-                              class="form-control"
+                              className="form-control"
                               placeholder="Confirm Password"
                             />
                           </div>
                           <button
                             type="submit"
-                            class="btn btn-primary btn-login"
+                            className="btn btn-primary btn-login"
                           >
                             Register
                           </button>

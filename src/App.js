@@ -10,6 +10,11 @@ import Catalog from "./routes/catalog";
 import Bookingservicesome from "./routes/bookingServiceHome";
 // import Footer from "./commons/footer";
 import Cart from "./pages/cart";
+import Shop from "./shoping/shop";
+import DetailsProductsAuto from "./shoping/detailsProductsAuto";
+import DetailsProducts from "./shoping/detailsProducts";
+import ConfirmForm from "./shoping/confirmForm";
+import ConfirmMassage from "./shoping/confirmMassage";
 
 // English
 
@@ -19,6 +24,11 @@ import ToolsEn from "./routes-en/toolsEn";
 import CatalogEn from "./routes-en/catalogEn";
 import BookingServiceHomeEn from "./routes-en/bookingServiceHomeEn";
 import CartEn from "./pages/cartEn";
+import ShopEn from "./shoping/shoping-en/shopEn";
+import ConfirmFormEn from "./shoping/shoping-en/confirmFormEn";
+import ConfirmMassageEn from "./shoping/shoping-en/confirmMassageEn";
+import DetailsProductsAutoEn from "./shoping/shoping-en/detailsProductsAutoEn";
+import DetailsProductsEn from "./shoping/shoping-en/detailsProductsEn";
 
 class App extends Component {
   render() {
@@ -38,6 +48,15 @@ class App extends Component {
             component={Bookingservicesome}
           />
           <Route path="/cart" exact component={Cart} />
+          <Route path="/shop" exact component={Shop} />
+          <Route
+            path="/details-products-auto"
+            exact
+            component={DetailsProductsAuto}
+          />
+          <Route path="/details-products" exact component={DetailsProducts} />
+          <Route path="/confirm-form" exact component={ConfirmForm} />
+          <Route path="/confirm-massage" exact component={ConfirmMassage} />
 
           {/* English */}
 
@@ -52,6 +71,23 @@ class App extends Component {
             component={BookingServiceHomeEn}
           />
           <Route path="/cart-en" exact component={CartEn} />
+          <Route path="/shop-en" exact component={ShopEn} />
+          <Route
+            path="/details-products-auto-en"
+            exact
+            component={DetailsProductsAutoEn}
+          />
+          <Route
+            path="/details-products-en"
+            exact
+            component={DetailsProductsEn}
+          />
+          <Route path="/confirm-form-en" exact component={ConfirmFormEn} />
+          <Route
+            path="/confirm-massage-en"
+            exact
+            component={ConfirmMassageEn}
+          />
 
           {/* <Footer /> */}
         </BrowserRouter>
