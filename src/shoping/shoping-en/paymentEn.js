@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-export default class detailsProductsEn extends Component {
+export default class paymentEn extends Component {
   render() {
     return (
       <div>
@@ -209,184 +209,189 @@ export default class detailsProductsEn extends Component {
           <div className="container">
             <div className="breadcrumb">
               <a href="#">Store</a>
+              <a href="#">Cart</a>
+              <span>Customer Information</span>
             </div>
 
-            <div className="row content-data-products">
-              <div className="col-md-9 right-details">
-                {/* <!-- slider-producst-details block --> */}
-                <div className="details-products-block">
-                  <div className="title-products">
-                    <h4>Alrahden for white clothes family size 6kg</h4>
-                    <a herf="#" data-toggle="modal" data-target="#shearModal">
-                      <i className="fas fa-share-alt"></i>
-                    </a>
-                  </div>
-                  {/* <!-- slider-producst-details --> */}
-                  <div className="slider-producst-details" dir="ltr">
-                    <div className="item-slider-details">
-                      <img src="assets/images/product2.jpg" />
-                    </div>
-                    <div className="item-slider-details">
-                      <img src="assets/images/product2.jpg" />
-                    </div>
-                    <div className="item-slider-details">
-                      <img src="assets/images/product2.jpg" />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="details-products-block block-details">
-                  <h2>Product Description:</h2>
-                  <p>
-                    Yes, if you need more paragraphs, the Arabic text generator
-                    allows you to increase the number of paragraphs as you like.
-                    Without a problem it would not look like copied,
-                    unorganized, uncoordinated, or even incomprehensible text.
-                    Because it is still an alternative and temporary text, an
-                    Arabic text that is not organized and does not contain
-                    language errors, the birth of the Arabic text Useful for
-                    website designers in particular, where the customer often
-                    needs to see a real picture of the site design’Ajeeb Gharib
-                    fishy This Arabic text has been generated from his site to
-                    wrap it, this text can be installed on any design,
-                  </p>
-                  <p>
-                    Yes, if you need more paragraphs, the Arabic text generator
-                    allows you to increase the number of paragraphs as you like.
-                    Without a problem it would not look like copied,
-                    unorganized, uncoordinated, or even incomprehensible text.
-                    Because it is still an alternative and temporary text, an
-                    Arabic text that is not organized and does not contain
-                    language errors, the birth of the Arabic text Useful for
-                    website designers in particular, where the customer often
-                    needs to see a real picture of the site design’Ajeeb Gharib
-                    fishy This Arabic text has been generated from his site to
-                    wrap it, this text can be installed on any design,{" "}
-                  </p>
-                  <p>
-                    Yes, without a problem, it would not look like copied,
-                    unorganized, uncoordinated, or even incomprehensible text.
-                    Because it is still an alternative and temporary text, this
-                    Arabic text was generated from its site to be wrapped, weird
-                    and strange. This text is an example of a text that can be
-                    replaced in the same space. This text can be installed on
-                    any design, nor Contains linguistic errors, the Arabic text
-                    generator is useful for website designers in particular,
-                    where the customer often needs to see a real picture of the
-                    site design’Ajib strange, fishy.{" "}
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-3 left-details">
-                <div className="details-products-block-left ">
-                  {/* <!--  Price Block --> */}
-                  <div className="price-details-left">
-                    <div className="price-before">
-                      <span className="w-price-before">Before:</span>
-                      <span className="class-number">115 SAR.</span>
-                    </div>
-
-                    <div className="price-now-left">
-                      <div className="w-now">Now:</div>
-                      <div className="price-now">79 SAR.</div>
-                      <div className="w-offter">Save 21%</div>
-                    </div>
-
-                    <div className="note-price">Prices include VAT</div>
-                  </div>
-
-                  {/* <!-- Size --> */}
-
-                  <div className="block-size">
-                    <div id="size--wrapper" className="size-form-checkboxes">
-                      <div className="js-form-type-checkbox ">
-                        <input
-                          type="checkbox"
-                          id="size-1"
-                          className="form-checkbox"
-                        />
-                        <label for="size-1" className="option">
-                          10 kg
-                        </label>
-                      </div>
-                      <div className="js-form-type-checkbox ">
-                        <input
-                          type="checkbox"
-                          id="size-2"
-                          className="form-checkbox"
-                        />
-                        <label for="size-2" className="option">
-                          10 g
-                        </label>
-                      </div>
-                      <div className="js-form-type-checkbox ">
-                        <input
-                          type="checkbox"
-                          id="size-3"
-                          className="form-checkbox"
-                        />
-                        <label for="size-3" className="option">
-                          Size 5
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="add-to-cart">
-                    <a href="./cart-en">
-                      <img src="assets/images/add-cart.svg" /> Add to cart
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <!-- service shop block --> */}
-        <div className="service-shop-block service-footer-shop">
-          <div className="container-fluid">
             <div className="row">
-              <div
-                className="col-md-3 items-service-shop wow zoomIn animated "
-                data-wow-delay="0.2s"
-              >
-                <img src="assets/images/connecting-icon.svg" />
-                <h3>Recieve from any branch</h3>
-                <p>Or free delivery on order for more than 200 riyals</p>
+              <div className="col-md-4 right-profile-block">
+                {/* <!-- Right Menu Profile --> */}
+                <div className="right-profile">
+                  <div className="menu-profile">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="assets/images/profile.svg" /> Personal
+                          Information
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/images/icons-requests.svg" /> My
+                          Orders
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/images/shipping.svg" /> Shipping
+                          Address
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/images/payment.svg" /> Payment Method
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/images/language.svg" /> Language
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="menu-profile">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="assets/images/support-icon.svg" /> Customers
+                          Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/images/privacy.svg" /> Privacy Policy
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/images/discuss-issue.svg" /> Common
+                          Question
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="assets/images/check-form.svg" /> Terms and
+                          Conditions
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                {/* <!-- End Right Menu Profile --> */}
               </div>
 
-              <div
-                className="col-md-3 items-service-shop wow zoomIn animated "
-                data-wow-delay="0.4s"
-              >
-                <img src="assets/images/return.svg" />
-                <h3>Free returns</h3>
-                <p>Return policy in case that you do not like the product</p>
-              </div>
+              <div className="col-md-8 left-profile-block">
+                <div className="left-profile">
+                  {/* <!-- Data Personal --> */}
+                  <div className="block-form with-btn-update blocks-addrss">
+                    <div className="header-bloks">
+                      <h4>Payment Method</h4>
+                      <div>
+                        <a href="#" className="add-address">
+                          <img src="assets/images/plus.svg" /> Add a Card
+                        </a>
+                        <button type="submit" className="btn-delete ">
+                          <img src="assets/images/delete.svg" />
+                        </button>
+                      </div>
+                    </div>
 
-              <div
-                className="col-md-3 items-service-shop wow zoomIn animated "
-                data-wow-delay="0.6s"
-              >
-                <img src="assets/images/security-icon.svg" />
-                <h3>Secure direct payment</h3>
-                <p>We accept all credit cards or mada cards</p>
-              </div>
+                    <div className="item-order-details-block block-payment">
+                      {/* <!-- Item --> */}
+                      <div className="item-address item-block-payment">
+                        <div className="col-md-1  checkbox-input checkboc-addrsss">
+                          <input
+                            className="checkbox-item"
+                            type="checkbox"
+                            value="option2"
+                          />
+                        </div>
+                        <div className="col-md-11 data-address-block">
+                          <div className="data-visa-number">
+                            <img src="assets/images/visa.svg" />
+                            <div className="numner-visa">**************123</div>
+                          </div>
+                          <div className="btn-update-address">
+                            <a href="#">Edit</a>
+                          </div>
+                        </div>
+                      </div>
+                      {/* <!-- Item --> */}
+                      <div className="item-address item-block-payment">
+                        <div className="col-md-1  checkbox-input checkboc-addrsss">
+                          <input
+                            className="checkbox-item"
+                            type="checkbox"
+                            value="option2"
+                          />
+                        </div>
+                        <div className="col-md-11 data-address-block">
+                          <div className="data-visa-number">
+                            <img src="assets/images/visa.svg" />
+                            <div className="numner-visa">**************123</div>
+                          </div>
+                          <div className="btn-update-address">
+                            <a href="#">Edit</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-              <div
-                className="col-md-3 items-service-shop wow zoomIn animated "
-                data-wow-delay="0.8s"
-              >
-                <img src="assets/images/client-service.svg" />
-                <h3>Customer Service Center</h3>
-                <p>Available 24 hours</p>
+                    <button className="btn btn-primary btn-send" type="submit">
+                      Save
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* <!-- End service shop block --> */}
 
-        {/* footer */}
+          {/* <!-- service shop block --> */}
+          <div className="service-shop-block service-footer-shop">
+            <div className="container-fluid">
+              <div className="row">
+                <div
+                  className="col-md-3 items-service-shop wow zoomIn animated "
+                  data-wow-delay="0.2s"
+                >
+                  <img src="assets/images/connecting-icon.svg" />
+                  <h3>Recieve from any branch</h3>
+                  <p>Or free delivery on order for more than 200 riyals</p>
+                </div>
+
+                <div
+                  className="col-md-3 items-service-shop wow zoomIn animated "
+                  data-wow-delay="0.4s"
+                >
+                  <img src="assets/images/return.svg" />
+                  <h3>Free returns</h3>
+                  <p>Return policy in case that you do not like the product</p>
+                </div>
+
+                <div
+                  className="col-md-3 items-service-shop wow zoomIn animated "
+                  data-wow-delay="0.6s"
+                >
+                  <img src="assets/images/security-icon.svg" />
+                  <h3>Secure direct payment</h3>
+                  <p>We accept all credit cards or mada cards</p>
+                </div>
+
+                <div
+                  className="col-md-3 items-service-shop wow zoomIn animated "
+                  data-wow-delay="0.8s"
+                >
+                  <img src="assets/images/client-service.svg" />
+                  <h3>Customer Service Center</h3>
+                  <p>Available 24 hours</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!-- End service shop block --> */}
+        </div>
+        {/* <!-- End  Main web  --> */}
 
         <footer>
           <div className="footer-top">

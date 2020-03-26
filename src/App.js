@@ -15,6 +15,7 @@ import DetailsProductsAuto from "./shoping/detailsProductsAuto";
 import DetailsProducts from "./shoping/detailsProducts";
 import ConfirmForm from "./shoping/confirmForm";
 import ConfirmMassage from "./shoping/confirmMassage";
+import Payment from "./shoping/payment";
 
 // English
 
@@ -29,6 +30,7 @@ import ConfirmFormEn from "./shoping/shoping-en/confirmFormEn";
 import ConfirmMassageEn from "./shoping/shoping-en/confirmMassageEn";
 import DetailsProductsAutoEn from "./shoping/shoping-en/detailsProductsAutoEn";
 import DetailsProductsEn from "./shoping/shoping-en/detailsProductsEn";
+import PaymentEn from "./shoping/shoping-en/paymentEn";
 
 class App extends Component {
   render() {
@@ -57,6 +59,7 @@ class App extends Component {
           <Route path="/details-products" exact component={DetailsProducts} />
           <Route path="/confirm-form" exact component={ConfirmForm} />
           <Route path="/confirm-massage" exact component={ConfirmMassage} />
+          <Route path="/payment" exact component={Payment} />
 
           {/* English */}
 
@@ -71,6 +74,7 @@ class App extends Component {
             component={BookingServiceHomeEn}
           />
           <Route path="/cart-en" exact component={CartEn} />
+
           <Route path="/shop-en" exact component={ShopEn} />
           <Route
             path="/details-products-auto-en"
@@ -88,6 +92,7 @@ class App extends Component {
             exact
             component={ConfirmMassageEn}
           />
+          <Route path="/payment-en" exact component={PaymentEn} />
 
           {/* <Footer /> */}
         </BrowserRouter>
